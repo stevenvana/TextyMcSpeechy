@@ -86,8 +86,8 @@ source .venv/bin/activate
 echo "Activated virtual environment."
 
 # Update pip and install packages
-pip install --upgrade pip wheel setuptools
-echo "Updated pip, wheel, setuptools."
+pip install wheel setuptools
+echo "Updated wheel, setuptools."
 
 pip install piper-tts
 pip install build
