@@ -19,6 +19,16 @@ trap error_handler ERR
 # Exit on error
 set -e
 
+
+
+
+sudo apt update 
+sudo apt install software-properties-common -y 
+sudo add-apt-repository ppa:deadsnakes/ppa 
+sudo apt update
+sudo apt install python3-pip
+pip install pip==24.0 
+sudo apt install python3.10 python3.10-venv python3.10-dev
 echo
 echo
 echo
@@ -43,7 +53,6 @@ if [ "$choice" != "i" ] && [ "$choice" != "I" ]; then
     echo
     exit 0
 fi
-
 
 
 
@@ -86,7 +95,7 @@ source .venv/bin/activate
 echo "Activated virtual environment."
 
 # Update pip and install packages
-pip install --upgrade pip wheel setuptools
+pip install wheel setuptools
 echo "Updated pip, wheel, setuptools."
 
 pip install piper-tts
