@@ -160,3 +160,13 @@ cython_debug/
 #.idea/
 piper/*
 *.ckpt
+
+*.wav
+*.deb
+steven-nl_dojo/
+piper
+piper
+piper
+tts_dojo/DATASETS/wavfilesnew/dataset.conf
+tts_dojo/DATASETS/wavfilesnew/metadata.csv
+piper

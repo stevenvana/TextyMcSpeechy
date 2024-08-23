@@ -333,7 +333,7 @@ verify_wav_files_against_metadata(){
     # Read the metadata.csv file and process each line
     while IFS="|" read -r filename _; do
         # Append ".wav" to the filename
-        local wav_file="${filename}.wav"
+        local wav_file="${filename}"
 
         # Check if the file exists in the specified directory
         if [[ ! -f "${wav_dir}/${wav_file}" ]]; then
